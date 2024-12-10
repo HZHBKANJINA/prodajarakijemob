@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "929870582850",
+    "project_id": "prodajarakije-bd159",
+    "storage_bucket": "prodajarakije-bd159.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:929870582850:android:89f2f4232703ee2d6d89db",
+        "android_client_info": {
+          "package_name": "ba.sum.fsre.prodajarakije"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCCgc5SRO76coKkgpcjagEBxAmHBc9cOpo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

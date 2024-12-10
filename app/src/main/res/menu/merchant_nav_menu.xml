@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    >
+
+    <group>
+        <item
+            android:id="@+id/merchant_nav_home"
+            android:icon="@drawable/baseline_home_24"
+            android:title="Početna"
+            />
+        <item
+            android:id="@+id/merchant_nav_products"
+            android:title="Proizvodi"
+            />
+        <item
+            android:id="@+id/merchant_nav_orders"
+            android:title="Narudžbe"
+            />
+        <item
+            android:id="@+id/merchant_nav_transactions"
+            android:title="Transakcije"
+            />
+    </group>
+
+    <item
+        android:title=""
+        >
+        <menu>
+            <item
+                android:id="@+id/merchant_nav_profile"
+                android:title="Profil"
+                android:icon="@drawable/baseline_account_circle_24"
+                />
+            <item
+                android:id="@+id/merchant_logout"
+                android:title="Odjava"
+                />
+        </menu>
+    </item>
+
+</menu>

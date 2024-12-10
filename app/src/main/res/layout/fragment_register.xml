@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/watercolor"
+    tools:context=".fragments.RegisterFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:gravity="center">
+
+        <Spinner
+            android:id="@+id/userTypeSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:padding="18dp"
+            android:background="@drawable/rounded_corner"
+            android:entries="@array/user_type_options"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="20sp"/>
+
+        <EditText
+            android:id="@+id/registerEmailTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:layout_marginTop="32dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="20sp"
+            android:padding="18dp"
+            android:background="@drawable/rounded_corner"/>
+
+        <EditText
+            android:id="@+id/registerPasswordTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Lozinka"
+            android:inputType="textPassword"
+            android:layout_marginTop="32dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="20sp"
+            android:padding="18dp"
+            android:background="@drawable/rounded_corner"/>
+
+        <EditText
+            android:id="@+id/registerConfirmPasswordTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Potvrdi lozinku"
+            android:inputType="textPassword"
+            android:layout_marginTop="32dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="20sp"
+            android:padding="18dp"
+            android:background="@drawable/rounded_corner"/>
+
+        <Button
+            android:id="@+id/registerBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="REGISTRACIJA"
+            android:layout_gravity="center"
+            android:layout_marginTop="32dp"
+            android:backgroundTint="@color/aqua"
+            android:padding="18dp"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:cornerRadius="24dp"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

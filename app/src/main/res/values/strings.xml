@@ -1,3 +1,17 @@
 <resources>
     <string name="app_name">Prodaja Rakije</string>
+    <string-array name="sort_options">
+        <item>Naziv uzlazno</item>
+        <item>Naziv silazno</item>
+        <item>Cijena uzlazno</item>
+        <item>Cijena silazno</item>
+        <item>Godina proizvodnje uzlazno</item>
+        <item>Godina proizvodnje silazno</item>
+    </string-array>
+    <string-array name="user_type_options">
+        <item>Trgovac</item>
+        <item>Kupac</item>
+    </string-array>
+    <string name="open_drawer">Otvori drawer</string>
+    <string name="close_drawer">Zatvori drawer</string>
 </resources>

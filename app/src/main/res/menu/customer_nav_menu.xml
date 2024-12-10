@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    >
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/customer_nav_home"
+            android:title="Početna"
+            android:icon="@drawable/baseline_home_24" />
+            />
+        <item
+            android:id="@+id/customer_nav_transactions"
+            android:title="Transakcije"
+            />
+        <item
+            android:id="@+id/customer_nav_products"
+            android:title="Kupljeni Proizvodi"
+            />
+        <item
+            android:id="@+id/customer_nav_wallet"
+            android:title="Stanje Računa"
+            />
+    </group>
+
+    <group>
+        <item
+            android:id="@+id/customer_nav_profile"
+            android:title="Profil"
+            android:icon="@drawable/baseline_account_circle_24"
+            />
+        <item
+            android:id="@+id/customer_logout"
+            android:title="Odjava"
+            />
+    </group>
+
+</menu>
