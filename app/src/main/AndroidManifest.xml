@@ -13,8 +13,13 @@
         android:theme="@style/Theme.ProdajaRakije"
         tools:targetApi="31">
         <activity
-            android:name=".MerchantActivity"
+            android:name=".fragments.MerchantProfileFragment"
             android:exported="false" />
+        <activity
+            android:name=".MerchantActivity"
+            android:exported="false"
+            android:theme="@style/AppTheme.NoActionBar" />
+            />
         <activity
             android:name=".CustomerActivity"
             android:exported="false" />
