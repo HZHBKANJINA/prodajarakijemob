@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/merchant_product_update"
+        android:title="Ažuriraj proizvod"
+        android:icon="@drawable/baseline_update_24"
+        />
+    <item
+        android:id="@+id/merchant_product_delete"
+        android:title="Obriši proizvod"
+        android:icon="@drawable/baseline_delete_24"
+        />
+</menu>

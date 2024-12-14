@@ -11,12 +11,12 @@
             android:title="Početna"
             />
         <item
-            android:id="@+id/merchant_nav_products"
-            android:title="Proizvodi"
+            android:id="@+id/merchant_nav_add_product"
+            android:title="Dodaj proizvod"
             />
         <item
-            android:id="@+id/merchant_nav_orders"
-            android:title="Narudžbe"
+            android:id="@+id/merchant_nav_customers"
+            android:title="Kupci"
             />
         <item
             android:id="@+id/merchant_nav_transactions"

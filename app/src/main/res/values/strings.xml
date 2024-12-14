@@ -1,12 +1,10 @@
 <resources>
     <string name="app_name">Prodaja Rakije</string>
     <string-array name="sort_options">
-        <item>Naziv uzlazno</item>
-        <item>Naziv silazno</item>
+        <item>Naziv A-Z</item>
+        <item>Naziv Z-A</item>
         <item>Cijena uzlazno</item>
         <item>Cijena silazno</item>
-        <item>Godina proizvodnje uzlazno</item>
-        <item>Godina proizvodnje silazno</item>
     </string-array>
     <string-array name="user_type_options">
         <item>Trgovac</item>
@@ -14,4 +12,13 @@
     </string-array>
     <string name="open_drawer">Otvori drawer</string>
     <string name="close_drawer">Zatvori drawer</string>
+    <string name="title_activity_merchant_products_fragment">MerchantProductsFragment</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
 </resources>

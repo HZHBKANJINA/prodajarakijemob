@@ -17,6 +17,8 @@ import androidx.fragment.app.Fragment;
 
 import com.google.android.material.navigation.NavigationView;
 
+import ba.sum.fsre.prodajarakije.fragments.AddProductFramgent;
+import ba.sum.fsre.prodajarakije.fragments.MerchantProductListViewFragment;
 import ba.sum.fsre.prodajarakije.fragments.MerchantProfileFragment;
 
 public class MerchantActivity extends AppCompatActivity {
@@ -46,6 +48,10 @@ public class MerchantActivity extends AppCompatActivity {
                 Fragment selectedFragment=null;
                 if(item.getItemId()==R.id.merchant_nav_profile){
                     selectedFragment=new MerchantProfileFragment();
+                } else if (item.getItemId()==R.id.merchant_nav_add_product) {
+                    selectedFragment=new AddProductFramgent();
+                } else if (item.getItemId()==R.id.merchant_nav_home) {
+                    selectedFragment=new MerchantProductListViewFragment();
                 }
                 assert selectedFragment != null;
                 getSupportFragmentManager().beginTransaction().replace(R.id.merchant_fragment_container,selectedFragment).commit();

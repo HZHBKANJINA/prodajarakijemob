@@ -6,13 +6,8 @@
         android:icon="@drawable/baseline_home_24"
         />
     <item
-        android:title="Korpica"
-        android:id="@+id/nav_cart"
-        android:icon="@drawable/baseline_shopping_cart_24"
-        />
-    <item
-        android:title="Profil"
-        android:id="@+id/nav_profile"
-        android:icon="@drawable/baseline_account_circle_24"
+        android:title="Prijava"
+        android:id="@+id/nav_login"
+        android:icon="@drawable/baseline_login_24"
         />
 </menu>

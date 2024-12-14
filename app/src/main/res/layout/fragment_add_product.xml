@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/watercolor"
+    tools:context=".fragments.AddProductFramgent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/addProductImage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_launcher_foreground"
+                android:layout_marginTop="32dp"
+                android:layout_marginBottom="50dp"
+                android:padding="18dp"
+                android:background="@drawable/rounded_corner" />
+
+            <EditText
+                android:id="@+id/addProductTitleTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:padding="18dp"
+                android:textSize="20sp"
+                android:background="@drawable/rounded_corner"
+                android:hint="Naziv proizvoda"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/addProductPriceTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:padding="18dp"
+                android:textSize="20sp"
+                android:background="@drawable/rounded_corner"
+                android:hint="Cijena proizvoda"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/addProductQuantityTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:padding="18dp"
+                android:textSize="20sp"
+                android:background="@drawable/rounded_corner"
+                android:hint="Količina proizvoda"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:inputType="number" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="32dp"
+                android:backgroundTint="@color/aqua"
+                android:padding="18dp"
+                app:cornerRadius="24dp"
+                android:textSize="24sp"
+                android:text="Odaberi sliku"
+                android:textColor="@color/black"
+                android:id="@+id/selectProductImageBtn" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="32dp"
+                android:backgroundTint="@color/aqua"
+                android:padding="18dp"
+                app:cornerRadius="24dp"
+                android:textSize="24sp"
+                android:text="DODAJ PROIZVOD"
+                android:textColor="@color/black"
+                android:id="@+id/addProductBtn" />
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

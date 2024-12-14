@@ -2,6 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -13,16 +17,40 @@
         android:theme="@style/Theme.ProdajaRakije"
         tools:targetApi="31">
         <activity
+            android:name=".fragments.CustomerHomeFragment"
+            android:exported="false" />
+        <activity
+            android:name=".fragments.LocationMapFragment"
+            android:exported="false" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBepWjkDseQvjsCRnP-Jh4_seG-U6tEVjE" />
+
+        <activity
+            android:name=".fragments.CustomerProfileFragment"
+            android:exported="false" />
+        <activity
+            android:name=".fragments.AddProductFramgent"
+            android:exported="false" />
+        <activity
+            android:name=".fragments.MerchantProductListViewFragment"
+            android:exported="false" />
+        <activity
+            android:name=".ui.login.MerchantProductsFragment"
+            android:exported="false"
+            android:label="@string/title_activity_merchant_products_fragment" />
+        <activity
             android:name=".fragments.MerchantProfileFragment"
             android:exported="false" />
         <activity
             android:name=".MerchantActivity"
             android:exported="false"
             android:theme="@style/AppTheme.NoActionBar" />
-            />
         <activity
             android:name=".CustomerActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".fragments.RegisterFragment"
             android:exported="false" />
