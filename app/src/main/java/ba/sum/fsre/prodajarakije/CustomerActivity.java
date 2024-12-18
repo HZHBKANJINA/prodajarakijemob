@@ -17,6 +17,7 @@ import androidx.fragment.app.Fragment;
 
 import com.google.android.material.navigation.NavigationView;
 
+import ba.sum.fsre.prodajarakije.fragments.CustomerHomeFragment;
 import ba.sum.fsre.prodajarakije.fragments.CustomerProfileFragment;
 
 public class CustomerActivity extends AppCompatActivity {
@@ -46,6 +47,8 @@ public class CustomerActivity extends AppCompatActivity {
                 Fragment selectedFragment=null;
                 if(item.getItemId()==R.id.customer_nav_profile){
                     selectedFragment=new CustomerProfileFragment();
+                } else if (item.getItemId()==R.id.customer_nav_home) {
+                    selectedFragment=new CustomerHomeFragment();
                 }
                 assert selectedFragment != null;
                 getSupportFragmentManager().beginTransaction().replace(R.id.customer_fragment_container,selectedFragment).commit();

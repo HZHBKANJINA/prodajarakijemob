@@ -24,15 +24,15 @@
             android:padding="16dp"
             android:gravity="center_vertical"
             >
-            <EditText
+            <SearchView
                 android:id="@+id/customer_home_search_bar"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:hint="Pretraži rakiju i vino"
-                android:padding="12dp"
-                android:textSize="16sp"
+                android:queryHint="Pretraži rakiju i vino"
+                android:iconifiedByDefault="false"
                 android:background="@drawable/rounded_corner"
+                android:padding="8dp"
                 />
             <Spinner
                 android:id="@+id/customer_home_product_sort_spinner"
