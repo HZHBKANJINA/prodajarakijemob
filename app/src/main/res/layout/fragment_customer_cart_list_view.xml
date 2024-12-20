@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <!-- ListView za prikaz proizvoda u korpi -->
+    <ListView
+        android:id="@+id/customer_cart_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="1dp" />
+
+    <!-- Totalni iznos i gumb za kupovinu -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="8dp">
+
+        <!-- Labela za ukupnu cijenu -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ukupno:"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <!-- Prikaz ukupne cijene -->
+        <TextView
+            android:id="@+id/customer_cart_total_price"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <!-- Gumb za kupovinu -->
+        <Button
+            android:id="@+id/customer_cart_checkout_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kupi"
+            android:padding="8dp" />
+    </LinearLayout>
+</LinearLayout>

@@ -12,14 +12,17 @@
         <item
             android:id="@+id/customer_nav_transactions"
             android:title="Transakcije"
+            android:icon="@drawable/baseline_payment_24"
             />
         <item
-            android:id="@+id/customer_nav_products"
-            android:title="Kupljeni Proizvodi"
+            android:id="@+id/customer_nav_cart"
+            android:title="Korpica"
+            android:icon="@drawable/baseline_shopping_cart_24"
             />
         <item
             android:id="@+id/customer_nav_wallet"
             android:title="Stanje Računa"
+            android:icon="@drawable/baseline_account_balance_wallet_24"
             />
     </group>
 
@@ -32,6 +35,7 @@
         <item
             android:id="@+id/customer_logout"
             android:title="Odjava"
+            android:icon="@drawable/baseline_logout_24"
             />
     </group>
 

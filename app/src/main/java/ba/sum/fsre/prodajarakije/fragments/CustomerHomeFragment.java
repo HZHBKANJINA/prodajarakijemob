@@ -31,6 +31,7 @@ import java.util.stream.Collectors;
 
 import ba.sum.fsre.prodajarakije.R;
 import ba.sum.fsre.prodajarakije.adapters.CustomerHomeProductAdapter;
+import ba.sum.fsre.prodajarakije.models.CartItem;
 import ba.sum.fsre.prodajarakije.models.Merchant;
 import ba.sum.fsre.prodajarakije.models.Product;
 
@@ -64,11 +65,23 @@ public class CustomerHomeFragment extends Fragment {
         searchBar=v.findViewById(R.id.customer_home_search_bar);
 
         db=FirebaseFirestore.getInstance();
+        mAuth=FirebaseAuth.getInstance();
+        String uid=mAuth.getCurrentUser().getUid();
         products=new ArrayList<>();
 
 
         customerHomeProductAdapter=new CustomerHomeProductAdapter(v.getContext(),products);
         customerHomeProductListView.setAdapter(customerHomeProductAdapter);
+
+        customerHomeProductListView.setOnItemClickListener((parent, view, position, id) -> {
+            Product selectedProduct = products.get(position);
+            String image = selectedProduct.getImage();
+            String title = selectedProduct.getTitle();
+            int price = selectedProduct.getPrice();
+            int quantity = 1;
+            CartItem newCartItem = new CartItem(image, title, price, quantity);
+            db.collection("cartItem").document(uid).set(newCartItem);
+        });
 
 
         getProducts();
@@ -123,4 +136,6 @@ public class CustomerHomeFragment extends Fragment {
             }
         });
     }
+
+    private  void saveCartItem(){}
 }

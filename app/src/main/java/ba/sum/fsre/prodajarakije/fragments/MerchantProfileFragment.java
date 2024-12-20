@@ -22,6 +22,7 @@ import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
 
 import ba.sum.fsre.prodajarakije.R;
+import ba.sum.fsre.prodajarakije.models.Customer;
 import ba.sum.fsre.prodajarakije.models.Merchant;
 
 public class MerchantProfileFragment extends Fragment {

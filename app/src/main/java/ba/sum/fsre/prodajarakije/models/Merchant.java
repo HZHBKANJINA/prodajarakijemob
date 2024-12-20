@@ -2,6 +2,8 @@ package ba.sum.fsre.prodajarakije.models;
 
 import com.google.firebase.firestore.PropertyName;
 
+import ba.sum.fsre.prodajarakije.adapters.CustomerHomeProductAdapter;
+
 public class Merchant {
     private String storeName;
     private String firstName;
@@ -9,6 +11,7 @@ public class Merchant {
     private String phone;
     private String address;
     private String city;
+
 
     public Merchant(){}
 

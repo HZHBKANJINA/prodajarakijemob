@@ -1,26 +1,28 @@
 package ba.sum.fsre.prodajarakije.fragments;
 
 import android.os.Bundle;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
+import androidx.fragment.app.Fragment;
 
 import ba.sum.fsre.prodajarakije.R;
 
-public class MerchantCustomerListViewFragment extends AppCompatActivity {
+public class MerchantCustomerListViewFragment extends Fragment {
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        EdgeToEdge.enable(this);
-        setContentView(R.layout.fragment_merchant_list_view);
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
-            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
-            return insets;
-        });
+    public MerchantCustomerListViewFragment(){
+        super();
     }
+
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,Bundle savedInstanceState){
+        View v=inflater.inflate(R.layout.fragment_merchant_product_list_view,container,false);
+        return v;
+    }
+
 }

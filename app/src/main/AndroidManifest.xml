@@ -17,6 +17,12 @@
         android:theme="@style/Theme.ProdajaRakije"
         tools:targetApi="31">
         <activity
+            android:name=".fragments.CustomerCartListViewFragment"
+            android:exported="false" />
+        <activity
+            android:name=".fragments.CustomerCartFragment"
+            android:exported="false" />
+        <activity
             android:name=".fragments.MerchantCustomerListViewFragment"
             android:exported="false" />
         <activity

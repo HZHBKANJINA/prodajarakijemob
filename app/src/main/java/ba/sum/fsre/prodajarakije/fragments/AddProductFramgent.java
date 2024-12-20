@@ -38,6 +38,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 import ba.sum.fsre.prodajarakije.R;
+import ba.sum.fsre.prodajarakije.models.Customer;
 import ba.sum.fsre.prodajarakije.models.Merchant;
 import ba.sum.fsre.prodajarakije.models.Product;
 
